@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auto Job Apply"
+  short_description: "Find jobs, tailor applications, and manage outreach"
+  default_prompt: "Use $auto-job-apply to find matching jobs and help me apply using my current resume and preferences."

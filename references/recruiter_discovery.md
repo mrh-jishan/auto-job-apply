@@ -1,35 +1,9 @@
-# Recruiter Discovery & Email Resolution Reference
+# Recruiter discovery
 
-Strategies for discovering hiring managers and technical recruiters, and resolving their direct corporate email addresses.
+Search public company sources, job postings, and accessible LinkedIn profiles for recruiters relevant to the actual role and location. Use the available browser or search tool; do not assume an authenticated Chrome session.
 
-## 1. LinkedIn Discovery via Active Chrome Session
-When authenticated in Chrome, search LinkedIn for specific recruiting personas:
-- Queries:
-  - `"{Company}" technical recruiter security`
-  - `"{Company}" talent acquisition "identity"`
-  - `"{Company}" engineering recruiter remote`
-  - `"{Company}" director talent acquisition`
+Useful queries include company name plus technical recruiter, talent acquisition, the target discipline, or engineering recruiting. Prefer a recruiter assigned to the role or team, then a relevant talent partner or hiring manager.
 
-### Priority Ranking
-1. Specialized Technical Recruiter / Talent Partner dedicated to the specific domain (Security, IAM, Infrastructure, Platform).
-2. Lead / Senior Technical Recruiter.
-3. Director or Head of Talent Acquisition.
-4. Hiring Manager (e.g., Director of Security Engineering, VP of Infrastructure).
+Record the person's name, role, profile/source URL, and the source for their contact address. A name or LinkedIn profile does not verify an email address. Corporate naming patterns are hypotheses, not verified contacts. Do not send to guessed addresses. Use an address published for recruiting, provided by the user, or confirmed in existing authorized correspondence. If no verified recipient exists, record the profile for follow-up and skip sending.
 
----
-
-## 2. Corporate Email Pattern Resolution
-Most corporate domains follow standard naming conventions:
-
-Pattern | Example | Companies Using
-:--- | :--- | :---
-`{first_initial}{last}@{domain}` | `jchipman@collegeboard.org`, `aweryk@beyondfinance.com` | Traditional enterprises, finance, higher ed
-`{first}.{last}@{domain}` | `sara.clagett@affirm.com`, `john.doe@company.com` | High-growth tech, fintech
-`{first}@{domain}` | `andy@company.com`, `alex@company.com` | Early/mid-stage startups
-`recruiting@{domain}` | `recruiting@crowdstrike.com` | Centralized corporate recruiting inboxes
-
----
-
-## 3. Fallback Rules
-- If no direct recipient or email is discovered, do NOT send cold emails blindly to random addresses.
-- Focus effort on verified recruiters with public LinkedIn presence.
+Check the pipeline for prior contact. Discovery alone does not authorize email or LinkedIn messages; follow the user's requested outreach scope.

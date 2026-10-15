@@ -1,32 +1,19 @@
-# ATS Portals Automation Reference
+# ATS portal guidance
 
-This guide details reliable automation strategies for enterprise Applicant Tracking Systems (ATS).
+Treat these as navigation hints. Inspect the live page before acting; selectors and step order vary by employer. Use the current browser tool's supported interactions. Do not force form submission or bypass validation with synthetic events.
 
-## 1. Greenhouse (boards.greenhouse.io & job-boards.greenhouse.io)
+## Greenhouse
 
-### Key Characteristics
-- Direct job application endpoints with structured form fields (`#first_name`, `#last_name`, `#email`, `#phone`).
-- Resume uploads via `input[type="file"]#resume` or `button[aria-label="Attach"]`.
-- Cover Letter: Always look for "Enter manually" button or `textarea#cover_letter_text` to inject the tailored human pitch.
-- Location Fields: Often powered by React-Select. Type the city/state (e.g., "Coconut Creek"), wait 300ms for options, and dispatch Enter or click `.select__menu-notice` / `.select__option`.
-- Security Verification: Certain high-security tech employers (e.g. Coinbase) trigger a one-time numeric passcode sent to the applicant's email during form submission. Read the code from Gmail and input it into the confirmation field.
+Look for contact details, resume upload, and cover-letter upload or manual entry. Location fields may use searchable dropdowns: select the visible matching result and verify the stored value. Review employer-specific screening questions and any email verification step.
 
----
+## Workday
 
-## 2. Workday (myworkdayjobs.com)
+An employer-specific candidate account may be required. Steps commonly cover resume parsing, experience, screening questions, disclosures, and review. Inspect all parsed fields, including dates and employer names. Use visible Next and Submit controls; inspect validation messages if a control does not respond. Do not assume resume parsing is accurate.
 
-### Key Characteristics
-- Requires an active candidate profile (`userHome` / Candidate Home).
-- Synthetic Event Model: Workday buttons frequently have `tabindex="-2"` and ignore native `.click()`. Always trigger clicks on parent wrappers `div[data-automation-id="click_filter"]` or use `form.requestSubmit()`.
-- Steps Flow: Typically 6 to 8 steps (Account -> Resume Autofill -> Contact Info -> Experience -> Questionnaire -> Disclosures -> Review -> Submit).
-- Resume Parsing: Uploading the PDF resume autofills 90% of fields automatically. Always verify parsed fields before submitting.
+## Lever
 
----
+Applications often use a single form with a resume attachment and an additional-information field. Verify the current labels, required fields, upload completion, and confirmation state.
 
-## 3. Lever (jobs.lever.co)
+## Evidence
 
-### Key Characteristics
-- Clean, lightweight forms with standard HTML inputs.
-- Single-page application format.
-- Resume upload via standard file input.
-- Additional information / cover letter text box directly accessible on page.
+Record the application ID or confirmation text and URL when available. Screenshots supplement that evidence when the browser supports them. Do not mark an application submitted solely because the submit button was clicked.

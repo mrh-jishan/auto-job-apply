@@ -1,38 +1,28 @@
-# Cold Outreach & Cover Letter Guidelines
+# Cover letters and outreach
 
-Framework for composing concise, human, unique cold emails and cover letters that achieve 20%+ interview conversion rates.
+Use only facts supported by the current resume or confirmed user profile. Match two or three relevant accomplishments to the actual job requirements. Never copy employer names, certifications, or performance metrics from an example as candidate facts.
 
-## Core Principles
+For outreach, prefer fewer than 120 words, a role-specific subject, up to three short impact bullets, and a brief invitation to connect. Avoid em dashes in drafted application and outreach prose unless the user prefers otherwise. Attach the intended resume and verify the attachment before sending. Do not promise interview conversion rates.
 
-1. **Brevity is King**: Keep emails under 120 words. Hiring managers read cold outreach on mobile devices. Long emails get ignored.
-2. **Immediate Context**: The first sentence must state the exact role and job requisition number, noting you already applied via their portal.
-3. **Three Punchy Impact Bullets**:
-   - Bullet 1: Core scale & architecture (e.g. leading IAM across 40+ enterprise apps, millions of transactions).
-   - Bullet 2: Direct tech stack match (e.g. Okta, Entra ID, PingFederate, SCIM, Terraform, Python).
-   - Bullet 3: Security & certification authority (e.g. zero-trust, CKAD, AWS Developer Certified).
-4. **Soft Call-to-Action**: "I would love the opportunity to connect briefly if my background aligns with what you and the team are seeking."
-5. **Always Attach Resume**: Ensure the target PDF resume is verified attached.
-6. **Strictly Zero Em Dashes**: Never use the em dash character in emails, subjects, or summaries. Use standard hyphens (-) or colons (:).
-
----
-
-## Standard Cold Email Template
+Suggested subject: `{Job Title} (#{Req ID}) - {Candidate Name}`. Omit the ID if unavailable.
 
 ```text
 Hi {Recruiter First Name},
 
-I just applied for the {Job Title} role (#{Req ID}) at {Company} and wanted to reach out directly.
+{Confirmed application status or truthful expression of interest} for {Job Title} at {Company}.
 
-I lead enterprise IAM and cloud security platform engineering at Kroger, managing identity lifecycle and access governance across 40+ mission-critical services:
-- Scaled centralized IAM/CIAM platforms federating Okta, Entra ID, and PingFederate with zero-trust policies and SAML/OIDC.
-- Automated SCIM provisioning, RBAC/ABAC role matrices, and lifecycle workflows using Terraform and Python.
-- Built zero-trust security boundaries, automated compliance auditing, and container security (CKAD and AWS Certified).
+My relevant experience includes:
+- {Verified accomplishment matching a key requirement}
+- {Verified technical experience relevant to this team}
+- {Optional additional verified accomplishment}
 
-Given {Company}'s focus on {company mission / platform goals}, I would love the opportunity to connect briefly to discuss how my background can support your engineering team.
+I would welcome a brief conversation about how my background could support {specific team goal}.
 
-I have attached my resume for reference.
+My resume is attached.
 
-Best regards,
+Best,
 {Candidate Name}
-{Phone} | {LinkedIn URL} | {Email}
+{Preferred contact details}
 ```
+
+Replace all placeholders and omit unsupported statements. Say the resume is attached only after verifying it. A cover letter can use the same evidence but should address the employer directly and adapt to the form's length limit.
